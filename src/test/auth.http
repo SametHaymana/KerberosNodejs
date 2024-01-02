@@ -1,0 +1,19 @@
+POST http://localhost:9999/auth/as Http/1.1
+Content-Type: application/json
+
+{
+    "username": "admin",
+    "password": "admin1"
+}
+
+
+###
+
+POST http://localhost:9999/auth/tgs Http/1.1
+Content-Type: application/json
+
+{
+    "username": "admin",
+    "tgt": "5eb8ed8c30d6e29904e43359:b0122cde72947daa33f8c24053b4e302da6146b1d3781acae6:8b4c82739fe5a43b9a82e4a3ae1bc3e1:b6817beb4e7cc491d88f22c3c32b9441",
+    "serverId":"management"
+}

@@ -1,0 +1,52 @@
+GET  http://localhost:9999/management/me Http/1.1
+tgt: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwic2VydmVySWQiOiJtYW5hZ2VtZW50Iiwicm9sZSI6ImFkbWluIiwiZXhwaXJlZCI6MTcwMzI4MjAzMTA0MCwiaWF0IjoxNzAzMjc4NDMxfQ.RYzwoImBt9bzPOXD_zQfMltp-EMvtkQ5VbfNL0NzuzY
+Content-Type: application/json
+
+
+###
+
+
+POST  http://localhost:9999/management/updatePass Http/1.1
+tgt: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwic2VydmVySWQiOiJtYW5hZ2VtZW50Iiwicm9sZSI6ImFkbWluIiwiZXhwaXJlZCI6MTcwMzI4MjAzMTA0MCwiaWF0IjoxNzAzMjc4NDMxfQ.RYzwoImBt9bzPOXD_zQfMltp-EMvtkQ5VbfNL0NzuzY
+Content-Type: application/json
+
+{
+    "password": "admin"
+}
+
+
+
+###
+// Admin Functionality
+
+
+GET  http://localhost:9999/management/users Http/1.1
+tgt: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwic2VydmVySWQiOiJtYW5hZ2VtZW50Iiwicm9sZSI6ImFkbWluIiwiZXhwaXJlZCI6MTcwMzI4MjAzMTA0MCwiaWF0IjoxNzAzMjc4NDMxfQ.RYzwoImBt9bzPOXD_zQfMltp-EMvtkQ5VbfNL0NzuzY
+Content-Type: application/json
+
+
+###
+
+POST  http://localhost:9999/management/users/ Http/1.1
+tgt: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwic2VydmVySWQiOiJtYW5hZ2VtZW50Iiwicm9sZSI6ImFkbWluIiwiZXhwaXJlZCI6MTcwMzI4MjAzMTA0MCwiaWF0IjoxNzAzMjc4NDMxfQ.RYzwoImBt9bzPOXD_zQfMltp-EMvtkQ5VbfNL0NzuzY
+Content-Type: application/json
+
+{
+    "username":"Ayça ",
+    "email":"Ayça",
+    "password": "Ayça",
+    // Can be admin or user
+    "role": "user"  
+}
+
+
+###
+
+// Update server key
+POST  http://localhost:9999/management/updateServerKey Http/1.1
+tgt: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwic2VydmVySWQiOiJtYW5hZ2VtZW50Iiwicm9sZSI6ImFkbWluIiwiZXhwaXJlZCI6MTcwMzI4MjAzMTA0MCwiaWF0IjoxNzAzMjc4NDMxfQ.RYzwoImBt9bzPOXD_zQfMltp-EMvtkQ5VbfNL0NzuzY
+Content-Type: application/json
+
+{
+    "serverKey": "ayça"
+}
